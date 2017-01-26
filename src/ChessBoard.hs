@@ -19,7 +19,7 @@ type Board = [[Square]]
 -- | Inform  whether piece color match position.
 colorMatch :: Board ->  Piece -- ^  color of the player to be moved
                     -> (Int, Int) -- ^ coordinates
-                    ->Bool
+                    -> Bool
 colorMatch board  piece (x,y)=
   takeElem2D x y (toStringBoard board) == showPiece piece
 
